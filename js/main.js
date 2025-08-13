@@ -1,3 +1,4 @@
+ //Select the video element with id 'projectVideo1'
 const video1 = document.getElementById('projectVideo1');
 
 // Scroll-down button functionality

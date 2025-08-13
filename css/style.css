@@ -1,14 +1,15 @@
+/* body and html section*/
 body{
     margin: 0;
     padding: 0;
-    font-family: sans-serif;
+    font-family: "Oswald",sans-serif;
     color: rgb(209, 229, 137);
 }
 
 html{
     scroll-behavior: smooth;
 }
-
+/* div conatiner*/
 .container{
 position: relative;
 width: 100%;
@@ -18,7 +19,7 @@ flex-direction: column;
 align-content: center;
 gap: 100px;
 }
-
+/*background viedo*/
 #bg-video {
     position: fixed;
     right: 0;
@@ -29,7 +30,7 @@ gap: 100px;
     mix-blend-mode: overlay;
     z-index: -1; /* Put behind content */
 }
-
+/* header*/
 header{
     display: flex;
     position: absolute;
@@ -45,7 +46,7 @@ header{
     box-shadow: 0 0 15px #72a1dea2;
     z-index: 999;
 }
-
+/*Logo section*/
 .left{
     display: flex;
     align-items: center;
@@ -55,8 +56,7 @@ header{
     width: 40px;
     margin: 0 15px;
 }
-
-
+/* header list*/
 header ul{
     display: flex;
     justify-content: space-between;
@@ -71,7 +71,7 @@ header ul{
 header ul li{
     list-style: none;
 }
-
+/*header links*/
 header ul a{
     text-decoration: none;
     color: white;
@@ -79,16 +79,16 @@ header ul a{
     transition: 0.3s;
     margin: 0 10px;
 }
-
+/* header effect*/
 header ul a:hover{
     text-shadow: 0 0 15px black;
 }
-
+/*icons*/
 .box-icons{
     display: flex;
     gap: 40px;
 }
-
+/*icons paragraph*/
 .box-icons p{
     display: flex;
     align-items: center;
@@ -101,13 +101,13 @@ header ul a:hover{
     cursor: pointer;
     transition: 0.5s;
 }
-
+/*icons effect*/
 .box-icons p:hover{
     background-color: #b4c3d7;
     color: black;
     box-shadow: 0 0 15px #b4c3d7;
 }
-
+/* 2nd background viedo section*/
 .b-box{
     position: absolute;
     top: 0;
@@ -123,8 +123,7 @@ header ul a:hover{
   margin-top: 0;
   object-fit: cover;
 }
-
-
+/* hero section*/
 .hero {
     position: relative;
     width: 100%;
@@ -136,16 +135,15 @@ header ul a:hover{
     z-index: 1;
 }
 
-
 .hero-title {
     flex: 1;
     max-width: 900px;
     display: flex;
     flex-direction: column;
     gap: 15px;
-    position: relative;  /* remove absolute positioning */
+    position: relative; 
 }
-
+/* hero section viedo*/
 .hero-video {
     flex: 1;
      align-items: center;
@@ -165,15 +163,12 @@ header ul a:hover{
     border-radius: inherit;
 
 }
-
-
-
+/* hero section heading and paragraph*/
 .hero-title h1,
 .hero-title p,
 header ul a {
     text-shadow: 0 2px 4px rgba(0,0,0,0.7);
 }
-
 
 .hero-title-1 p {
   display: flex;
@@ -203,7 +198,7 @@ background-color: #513e9196;
     margin-bottom: 40px;
     font-size: 20px;
 }
-
+/* hero section button style & effects*/
 .hero-title button{
     color: rgb(240, 239, 243);
     padding: 15px 35px;
@@ -218,21 +213,19 @@ background-color: #513e9196;
 .hero-title button:hover{
     box-shadow: 0 0 15px #72a1de81;
 }
-
-
-
+/*sroll-down*/
 .scroll-down {
     height: 50px;
     width: 30px;
     border: 2px solid lightgray;
     position: absolute;
-    left: 50%;                /* center horizontally */
-    bottom: 5%;               /* space from bottom */
-    transform: translateX(-50%); /* perfect centering */
+    left: 50%;               
+    bottom: 5%;              
+    transform: translateX(-50%); 
     border-radius: 50px;
     cursor: pointer;
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.626);
-    z-index: 2;               /* above video & text */
+    z-index: 2;             
 }
 
 .scroll-down::before,
@@ -273,7 +266,7 @@ background-color: #513e9196;
         opacity: 0;
     }
 }
-
+/*about section*/
 .info-section{
 display: flex;
 flex-direction: column;
@@ -287,7 +280,7 @@ margin-top: px;
     font-size: 40px;
     font-weight: 700;
 }
-
+/*about section card*/
 .info-cards{
     display: grid;
     grid-template-columns: auto auto auto;
@@ -296,7 +289,7 @@ margin-top: px;
     height: 100%;
     margin-top: 60px;
 }
-
+/* card*/
 .card{
     display: flex;
     align-items:flex-start;
@@ -310,7 +303,7 @@ margin-top: px;
     border-radius: 20px;
     transition: 0.5s;
 }
-
+/* card heading*/
 .card h1{
     position: absolute;
     margin: 0;
@@ -320,7 +313,7 @@ margin-top: px;
     z-index: 1;
     color: lightgray;
 }
-
+/* card paragraph*/
 .card p{
     position: absolute;
     bottom: 3%;
@@ -331,13 +324,13 @@ margin-top: px;
     font-size: 13px;
     line-height: 20px;
 }
-
+/* card image*/
 .card img{
     width: 80%;
     height: 50%;
     object-fit: cover;
 }
-
+/* card viedo*/
 .card video{
     margin-top: 10%;
     width: 70%;
@@ -345,15 +338,11 @@ margin-top: px;
     object-fit: cover;
     mix-blend-mode: lighten;
 }
-
-
+/* card effect*/
 .card:hover{
     box-shadow: 0 0 15px rgb(211, 211, 211);
 }
-
 /* Projects Section */
-
-
 .my-projects {
     display: flex;
     flex-direction: column;
@@ -362,7 +351,7 @@ margin-top: px;
     width: 80%;
     margin: 200px auto 700px auto;
 }
-
+/* project card*/
 .project-card {
     display: flex;
     gap: 10%;
@@ -371,32 +360,28 @@ margin-top: px;
     justify-content: center;
     flex-wrap: wrap;
 }
-
+/* project viedo and image section*/
 .project-vidbox, .project-imgbox {
     width: 45%;
     min-width: 300px;
 }
-
-
 .project-vidbox video {
-    width: 100%;               /* full width */
+    width: 100%;               
     height: auto;
-    border-radius: 20px;       /* rounded corners */
+    border-radius: 20px;       
     object-fit: cover;         
-    box-shadow: 0 10px 30px rgba(0,0,0,0.5);  /* soft shadow for depth */
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);  
     transition: transform 0.5s ease, box-shadow 0.5s ease;
-    filter: brightness(0.9) contrast(1.1);    /* subtle darken for visual effect */
+    filter: brightness(0.9) contrast(1.1);   
 }
 
 /* Hover effect */
 .project-vidbox video:hover {
-    transform: scale(1.03);           /* slightly zoom on hover */
-    box-shadow: 0 15px 40px rgba(0,0,0,0.7);  /* stronger shadow */
-    filter: brightness(1) contrast(1.1);      /* brighten slightly on hover */
+    transform: scale(1.03);          
+    box-shadow: 0 15px 40px rgba(0,0,0,0.7);  
+    filter: brightness(1) contrast(1.1);      
 }
-
-
-
+/*project image */
 .project-imgbox img {
     width: 100%;
     border-radius: 15px;
@@ -405,27 +390,26 @@ margin-top: px;
     cursor: pointer;
 }
 
-/* Hover effect */
+/*/*project image hover effect */
 .project-imgbox img:hover {
-    transform: scale(1.05);               /* slight zoom */
-    box-shadow: 0 15px 35px rgba(114, 76, 211, 0.811); /* stronger shadow */
-    filter: brightness(1.1);               /* brighten image slightly */
+    transform: scale(1.05);             
+    box-shadow: 0 15px 35px rgba(114, 76, 211, 0.811); 
+    filter: brightness(1.1);               
 }
-
-
+/*project info section */
 .project-info {
     width: 45%;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
-
+/*project heading */
 .project-info h1 {
     color: #a45fff;
     margin-bottom: 10px;
     font-size: 25px;
 }
-
+/*project paragraph */
 .project-info p {
     color: #ccc;
     line-height: 1.6;
@@ -554,38 +538,23 @@ margin-top: px;
     transform: translateY(-2px);
 }
 
-/* Responsive */
-@media screen and (max-width: 768px) {
-    .contact {
-        width: 90%;
-        gap: 30px;
-    }
-    .contact-box {
-        padding: 20px;
-    }
-    .info-contact, .icon {
-        justify-content: center;
-        text-align: center;
-    }
-}
-
 /* Footer Styling */
 .footer {
     display: flex;
-    justify-content: center;   /* Center content horizontally */
-    align-items: center;       /* Center content vertically */
-    flex-direction: column;    /* Stack content vertically */
-    gap: 10px;                 /* Space between elements */
-    height: auto;              /* Adjust height based on content */
+    justify-content: center;   
+    align-items: center;       
+    flex-direction: column;   
+    gap: 10px;                 
+    height: auto;              
     padding: 20px 0;
-    background-color: rgba(112, 43, 186, 0.2); /* Soft translucent background */
-    color: white;              /* Text color */
-    text-align: center;        /* Center text */
-    border-top: 1px solid rgba(255,255,255,0.2); /* subtle top border */
+    background-color: rgba(112, 43, 186, 0.2); 
+    color: white;            
+    text-align: center;        
+    border-top: 1px solid rgba(255,255,255,0.2); 
     z-index: 999;
     font-family: sans-serif;
 }
-
+/* footer heading */
 .footer h1{
     font-size: 20px;
     align-items: center;
@@ -611,26 +580,7 @@ margin-top: px;
         opacity: 0;
     }
 }
-
-
-/* AUTO DISPLAY ANIMAION */
-.autoDisplay{
-    animation: autoDisplayAnimation both;
-    animation-timeline: view();
-
-}
-
-@keyframes autoDisplayAnimation{
-    from{
-        filter: blur(10px);
-        transform: translateY(-200px) scale(0);
-    } 50%{
-        opacity: 1;
-        filter: blur(0px);
-        transform: translateX(0) scale(1);
-    }
-}
-
+/*Aspect Ratio responsiv*/
 
 @media (max-aspect-ratio: 16/9){
     .back-vid{
@@ -645,10 +595,24 @@ margin-top: px;
         height: auto;
     }
 }
+/* Tablet Responsive */
+@media screen and (max-width: 768px) {
+    .contact {
+        width: 90%;
+        gap: 30px;
+    }
+    .contact-box {
+        padding: 20px;
+    }
+    .info-contact, .icon {
+        justify-content: center;
+        text-align: center;
+    }
+}
 
-
+/*Medium screens*/
 @media screen and (max-width: 1200px){
-    .b-holevideo{
+    .b-box{
         margin-top: -20%;
     }
 
@@ -696,132 +660,7 @@ margin-top: px;
     }
 }
 
-@media screen and (max-width: 700px){
-    header {
-        position: fixed;
-        height: 50px;
-    }
-
-    header ul{
-        display: none;
-    }
-
-    header .box-icons{
-        display: none;
-    }
-
-    .menu-icon{
-        display: inline;
-    }
-
-    .blackhole-box video {
-        width: 100%;
-        margin-top: -15%;
-    }
-
-    .autoBlur{
-        animation: none;
-    }
-    
-    .hero{
-        flex-direction: column;
-        top:0;
-        bottom: 0;
-        left: 0;
-        right:0;
-        
-    }
-    .hero-info{
-        bottom: 5%;
-    }
-
-    .info-cards{
-        grid-template-columns: auto;
-    }
-
-    .card:nth-child(3){
-        grid-column: span 2;
-        height: 70vh;
-    }
-
-    .card video{
-        width: 100%;
-    }
-    
-    .container{
-        height: 100%;
-    }
-
-    .project-vidbox video{
-        width: 250px;
-        margin-left: -100px;
-    }
-
-    .project-info{
-        overflow: hidden;
-        padding-left: 0;
-        margin-left: -50px;
-    }
-
-    .project-info h1{
-        font-size: 20px;
-        max-width: 200px;
-        text-wrap: wrap;
-    }
-
-    .project-info p{
-        font-size: 10px;
-        text-wrap: wrap;
-        max-width: 200px;
-        min-width: 0;
-    }
-
-    .project-info button{
-        padding: 5px 10px;
-    }
-
-    .my-project{
-        margin-bottom: 600px;
-    }
-
-    .project-card{
-        flex-direction: column;
-        margin-left: 25%;
-        gap: 30px;
-    }
-    
-    .project-vidbox{
-        min-width: 200px;
-    }
-
-    .project-info{
-        width: 85%;
-    }
-
-    .project-info h1{
-        text-wrap: nowrap;
-    }
-
-    .project-info p{
-        max-width: 300px;
-    }
-
-
-    .contact-section{
-        flex-direction: column;
-        margin-top: 100px;
-        margin-bottom: 50px;
-    }
-
-    .footer{
-        font-size: 10px;
-    }
-
-    .social-box{
-        margin-left: -90px;
-    }
-}
-
+/* Mobile Responsive*/
 
 @media screen and (max-width: 480px) {
 
